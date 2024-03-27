@@ -1,0 +1,79 @@
+{
+  "expo": {
+    "name": "rocket-meals-dev",
+    "slug": "rocket-meals-dev",
+    "version": "0.9.0",
+    "orientation": "default",
+    "icon": "./assets/images/icon.png",
+    "notification": {
+      "icon": "./assets/images/notification-icon.png"
+    },
+    "updates": {
+      "enabled": true,
+      "url": "https://u.expo.dev/36f72583-5997-4602-8609-05f39444f2e7"
+    },
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "config": {
+        "usesNonExemptEncryption": false
+      },
+      "supportsTablet": true,
+      "bundleIdentifier": "com.baumgartnersoftware.rocketmealsdev",
+      "buildNumber": "6"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      "expo-notifications",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with the world.",
+          "cameraPermission": "The app accesses your camera to let you share photos with the world."
+        }
+      ],
+      [
+        "expo-updates",
+        {
+          "username": "jack5496"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "baseUrl": "/rocket-meals"
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "36f72583-5997-4602-8609-05f39444f2e7"
+      }
+    },
+    "owner": "baumgartner-software",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    }
+  }
+}
